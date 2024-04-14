@@ -1,7 +1,8 @@
 import React from 'react'
-import Preheader from './Preheader'
-import Header from './Header'
-import Main from './Main'
+import './Intro.scss'
+import Preheader from '../Preheader/Preheader'
+import Header from '../Header/Header'
+import Main from '../Main/Main'
 
 export default function Intro() {
   return (

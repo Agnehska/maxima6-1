@@ -1,5 +1,6 @@
 import React from 'react'
-import wa from '../../assets/img/watsapp_green.svg'
+import './Socials.scss'
+import wa from '../../../assets/img/watsapp_green.svg'
 
 export default function Socials() {
   return (

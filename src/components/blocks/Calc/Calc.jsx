@@ -1,4 +1,5 @@
 import React from 'react'
+import './Calc.scss'
 
 export default function Calc() {
   return (

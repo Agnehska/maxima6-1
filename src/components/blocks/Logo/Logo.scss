@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: start;
+  margin-right: 90px;
+
+  &__block {
+    width: 127px;
+    margin-left: 10px;
+  }
+
+  &__info {
+    font-size: 9px;
+    font-weight: 400;
+    color: #909195;
+  }
+}
