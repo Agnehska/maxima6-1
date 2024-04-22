@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from './blocks/Button'
+import './Main.scss'
+import Button from '../blocks/Button/Button'
 
 export default function Main() {
   return (

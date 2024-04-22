@@ -1,0 +1,59 @@
+.promise-card{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: black;
+    max-width: 355px;
+    justify-content: space-between;
+    &_big{        
+        height: 400px;  
+        background: url('../../../assets/img/bg_promise_big.png') no-repeat center center/cover;
+    }
+    &_small{
+        background: url('../../../assets/img/bg_promise_small1.png') no-repeat center center/cover;
+    }
+    &__block{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+    &__title{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 9px;
+    }
+    &__notice{
+        width: 95px;
+        font-size: 9px;
+        font-weight: 600;
+        padding: 9px 7px 8px 6px;
+        background-color: #fff;
+        border-radius: 12px;
+        text-align: center;
+    }
+    &__pay{
+        display: flex;
+        &_order{
+            flex-direction: column-reverse;
+        }
+    }
+    &__btn{
+        width: 159px;
+        font-size: 10px;
+        padding: 10px 14px;
+        background-color: #73B918;
+        margin-right: 13px;
+    }
+    &__price{
+        color: #fff;
+        font-size: 11px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        & span{
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+}

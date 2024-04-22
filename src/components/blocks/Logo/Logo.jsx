@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from '../../assets/img/logo.svg' 
-import logo_text from '../../assets/img/HOUSE_WORLD.svg'
+import './Logo.scss'
+import logo from '../../../assets/img/logo.svg' 
+import logo_text from '../../../assets/img/HOUSE_WORLD.svg'
 
 export default function Logo() {
   return (
