@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/maxima6-1/static/css/main.27b44b13.css",
+    "main.js": "/maxima6-1/static/js/main.5736e613.js",
+    "static/js/453.f64ad387.chunk.js": "/maxima6-1/static/js/453.f64ad387.chunk.js",
+    "static/media/main.png": "/maxima6-1/static/media/main.7854c8f56d44ccfafc98.png",
+    "static/media/advice.png": "/maxima6-1/static/media/advice.b49b1003ba95c352d17d.png",
+    "static/media/tree1.png": "/maxima6-1/static/media/tree1.a4432b302cfe98b0ca4c.png",
+    "static/media/bg_promise_big.png": "/maxima6-1/static/media/bg_promise_big.81121d01f09d3742cbfe.png",
+    "static/media/img1.png": "/maxima6-1/static/media/img1.0d1e98b60d571aa5166d.png",
+    "static/media/bg_promise_small1.png": "/maxima6-1/static/media/bg_promise_small1.aed8fb6bb83a124bbf9b.png",
+    "static/media/img2.png": "/maxima6-1/static/media/img2.7052503174aa95c01a04.png",
+    "static/media/house.png": "/maxima6-1/static/media/house.c3faba60326d6b1a52e8.png",
+    "static/media/roof_icon.svg": "/maxima6-1/static/media/roof_icon.617473bb49283aa92a080198d6b80a2e.svg",
+    "static/media/HOUSE_WORLD.svg": "/maxima6-1/static/media/HOUSE_WORLD.ef337c209bd99dc64cfbfa32fe0a9ec6.svg",
+    "static/media/watsapp_green.svg": "/maxima6-1/static/media/watsapp_green.1fbe245a74d71764401a8c2b5f6aa04c.svg",
+    "static/media/Star_1.svg": "/maxima6-1/static/media/Star_1.363eeb2a14f7122cd2055cb02731b9d1.svg",
+    "static/media/calc.svg": "/maxima6-1/static/media/calc.a82f8b0464e5f2f6c5bc.svg",
+    "index.html": "/maxima6-1/index.html",
+    "static/media/logo.svg": "/maxima6-1/static/media/logo.c0d7c921bcbf1359f5efc4c877b76d15.svg",
+    "static/media/search.svg": "/maxima6-1/static/media/search.bfd9f97c82778c52af74.svg",
+    "static/media/item.svg": "/maxima6-1/static/media/item.ddf48d91000364b0274c.svg",
+    "static/media/arrow_down.svg": "/maxima6-1/static/media/arrow_down.eff8cf6da6064d8d39bc.svg",
+    "static/media/dogovor.svg": "/maxima6-1/static/media/dogovor.50e38c306681381b0fac275db448488a.svg",
+    "static/media/sber.svg": "/maxima6-1/static/media/sber.cb271a4b4b12a2b35ff6.svg",
+    "static/media/heart.svg": "/maxima6-1/static/media/heart.e7f7eac3292a936b6ef2.svg",
+    "static/media/time.svg": "/maxima6-1/static/media/time.f883a3d2aa02c1bb4d09.svg",
+    "static/media/letter.svg": "/maxima6-1/static/media/letter.25144f67c8ea0fa58ef9.svg",
+    "static/media/arrow_right.svg": "/maxima6-1/static/media/arrow_right.ee35e4880dc2880ad66a.svg",
+    "main.27b44b13.css.map": "/maxima6-1/static/css/main.27b44b13.css.map",
+    "main.5736e613.js.map": "/maxima6-1/static/js/main.5736e613.js.map",
+    "453.f64ad387.chunk.js.map": "/maxima6-1/static/js/453.f64ad387.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27b44b13.css",
+    "static/js/main.5736e613.js"
+  ]
+}
