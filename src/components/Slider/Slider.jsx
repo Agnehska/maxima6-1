@@ -30,7 +30,7 @@ function SamplePrevArrow(props) {
 function MultipleItems() {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -45,7 +45,7 @@ function MultipleItems() {
           <Slider {...settings}>
             <div>
               <div className='slider__block'>
-                <img src={img1} alt="imageForSlider" className='slider__img'/>
+                <img src={img1} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
                   <h4 className="slider__subtitle">Любая перепланировка в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
@@ -55,9 +55,9 @@ function MultipleItems() {
             </div>
             <div>
               <div className='slider__block'>
-                <img src={img2} alt="imageForSlider" className='slider__img'/>
+                <img src={img2} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
-                  <h4 className="slider__subtitle">Металлическая дверь <br/> в подарок!</h4>
+                  <h4 className="slider__subtitle">Металлическая дверь <br /> в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
                   <Button class_btn="slider__btn">перейти к акции</Button>
                 </div>
@@ -65,17 +65,17 @@ function MultipleItems() {
             </div>
             <div>
               <div className='slider__block'>
-                <img src={img2} alt="imageForSlider" className='slider__img'/>
+                <img src={img2} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
-                  <h4 className="slider__subtitle">Металлическая дверь <br/> в подарок!</h4>
+                  <h4 className="slider__subtitle">Металлическая дверь <br /> в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
                   <Button class_btn="slider__btn">перейти к акции</Button>
                 </div>
               </div>
             </div>
             <div>
-            <div className='slider__block'>
-                <img src={img1} alt="imageForSlider" className='slider__img'/>
+              <div className='slider__block'>
+                <img src={img1} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
                   <h4 className="slider__subtitle">Любая перепланировка в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
@@ -85,19 +85,9 @@ function MultipleItems() {
             </div>
             <div>
               <div className='slider__block'>
-                  <img src={img1} alt="imageForSlider" className='slider__img'/>
-                  <div className="slider__wrap">
-                    <h4 className="slider__subtitle">Любая перепланировка в подарок!</h4>
-                    <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
-                    <Button class_btn="slider__btn">перейти к акции</Button>
-                  </div>
-              </div>
-            </div>
-            <div>
-              <div className='slider__block'>
-                <img src={img2} alt="imageForSlider" className='slider__img'/>
+                <img src={img1} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
-                  <h4 className="slider__subtitle">Металлическая дверь <br/> в подарок!</h4>
+                  <h4 className="slider__subtitle">Любая перепланировка в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
                   <Button class_btn="slider__btn">перейти к акции</Button>
                 </div>
@@ -105,7 +95,17 @@ function MultipleItems() {
             </div>
             <div>
               <div className='slider__block'>
-                <img src={img1} alt="imageForSlider" className='slider__img'/>
+                <img src={img2} alt="imageForSlider" className='slider__img' />
+                <div className="slider__wrap">
+                  <h4 className="slider__subtitle">Металлическая дверь <br /> в подарок!</h4>
+                  <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
+                  <Button class_btn="slider__btn">перейти к акции</Button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className='slider__block'>
+                <img src={img1} alt="imageForSlider" className='slider__img' />
                 <div className="slider__wrap">
                   <h4 className="slider__subtitle">Любая перепланировка в подарок!</h4>
                   <p className="slider__text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно выстро заполнить макеты или прототипы содержимым.</p>
@@ -117,7 +117,7 @@ function MultipleItems() {
         </div>
       </div>
     </div>
-    
+
   );
 }
 
