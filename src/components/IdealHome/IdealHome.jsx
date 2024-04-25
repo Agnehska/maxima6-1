@@ -19,37 +19,37 @@ export default function IdealHome() {
     function changeHouses(stage){
         setIsActive(stage)
     }
-  return (
-    <div className="ideal-home">
-        <div className="container">
-            <h2 className="ideal-home__title"><span>Ваш</span> идеальный дом <span>всего за 6 этапов</span></h2>
-            <div className="ideal-home__wrap">
-                <div className="ideal-home__buttons">
-                    {stages.map(stage => {
-                        return (
-                            <TabButton key={stage.id}
-                                class_btn={'tab__check ideal-home__check'} 
-                                isActive={isActive === stage.status}  
-                                setStatus={setIsActive}
-                                elem={stage}
-                                changeHouses={changeHouses}
-                            >{stage.title}</TabButton>
-                        )
-                    })}
-                </div>
+return (
+<div className="ideal-home">
+    <div className="container">
+        <h2 className="ideal-home__title"><span>Ваш</span> идеальный дом <span>всего за 6 этапов</span></h2>
+        <div className="ideal-home__wrap">
+            <div className="ideal-home__buttons">
                 {stages.map(stage => {
-                    if (stage.status === isActive){
-                        return <IdealHomeBlock stage={stage} />
-                    }
-                })}               
-                <div className="ideal-home__dogovor">
-                    <img src={house} alt="house" className='ideal-home__house' />
-                    <span className="ideal-home__line"></span>
-                    <p className="ideal-home__information">Пример договора</p>
-                    <img src={dogovor} alt="house" className='ideal-home__house' />
-                </div>
+                    return (
+                        <TabButton key={stage.id}
+                            class_btn={'tab__check ideal-home__check'} 
+                            isActive={isActive === stage.status}  
+                            setStatus={setIsActive}
+                            elem={stage}
+                            changeHouses={changeHouses}
+                        >{stage.title}</TabButton>
+                    )
+                })}
+            </div>
+            {stages.map(stage => {
+                if (stage.status === isActive){
+                    return <IdealHomeBlock stage={stage} />
+                }
+            })}               
+            <div className="ideal-home__dogovor">
+                <img src={house} alt="house" className='ideal-home__house' />
+                <span className="ideal-home__line"></span>
+                <p className="ideal-home__information">Пример договора</p>
+                <img src={dogovor} alt="house" className='ideal-home__house' />
             </div>
         </div>
     </div>
-  )
+</div>
+)
 }

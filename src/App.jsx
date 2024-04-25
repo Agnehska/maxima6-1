@@ -4,6 +4,7 @@ import Intro from './components/Intro/Intro';
 import Promise from './components/Promise/Promise'
 import Popular from './components/Popular/Popular';
 import IdealHome from './components/IdealHome/IdealHome';
+import MultipleItems from './components/Slider/Slider'
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Promise />
       <Popular />
       <IdealHome />
+      {/* <Slider /> */}
+      <MultipleItems />
     </div>
   );
 }
