@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "homepage": "https://Agnehska.github.io/maxima6-1/",
+=======
+  "homepage":"https://Agnehska.github.io/maxima6-1/",
+>>>>>>> Stashed changes
   "name": "maxima6-1",
   "version": "0.1.0",
   "private": true,
@@ -26,6 +30,10 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages –d --dist build"
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   },
   "eslintConfig": {
     "extends": [
