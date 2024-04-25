@@ -1,0 +1,17 @@
+.intro {
+  position: relative;
+  background: url("../../assets/img/main.png") no-repeat center center/cover;
+  padding-bottom: 243px;
+
+  &::before {
+    position: absolute;
+    top: 15%;
+    left: -15%;
+    transform: rotate(20deg);
+    content: "";
+    display: block;
+    width: 411px;
+    height: 371px;
+    background: url("../../assets/img/tree1.png") no-repeat center center/cover;
+  }
+}

@@ -1,14 +1,21 @@
 {
+  "homepage": "https://Agnehska.github.io/maxima6-1/",
   "name": "maxima6-1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.16.4",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.30.2",
     "sass": "^1.74.1",
     "web-vitals": "^2.1.4"
   },
@@ -16,7 +23,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages –d --dist build"
   },
   "eslintConfig": {
     "extends": [

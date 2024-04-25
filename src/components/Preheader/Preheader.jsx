@@ -1,8 +1,9 @@
 import React from 'react'
-import Logo from './blocks/Logo'
-import Raiting from './blocks/Raiting'
-import Calc from './blocks/Calc'
-import Socials from './blocks/Socials'
+import './Preheader.scss'
+import Logo from '../blocks/Logo/Logo'
+import Rating from '../blocks/Rating/Rating'
+import Calc from '../blocks/Calc/Calc'
+import Socials from '../blocks/Socials/Socials'
 
 export default function Preheader() {
   return (
@@ -10,7 +11,7 @@ export default function Preheader() {
       <div className="container">
         <div className="preheader__wrap">
           <Logo />
-          <Raiting />
+          <Rating />
           <Calc />
           <Socials />
         </div>

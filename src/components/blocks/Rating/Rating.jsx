@@ -1,7 +1,8 @@
 import React from 'react'
-import star from '../../assets/img/Star_1.svg'
+import './Rating.scss'
+import star from '../../../assets/img/Star_1.svg'
 
-export default function Raiting() {
+export default function Rating() {
   return (
     <div className='rating'>
       <div className="rating__flag">

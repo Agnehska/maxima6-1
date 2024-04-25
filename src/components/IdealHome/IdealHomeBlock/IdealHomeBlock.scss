@@ -1,0 +1,94 @@
+.ideal-home{
+    &__block{
+        display: flex;
+    }
+
+    &__img{
+        margin-right: 30px;
+    }
+
+    &__time{
+        display: flex;
+        color: #7A7D81;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        & span{
+            color: #4C4F56;
+            font-weight: 700;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 16px;
+            height: 20px;
+            background: url('../../../assets/img/time.svg');
+            margin-right: 17px;
+        }
+    }
+
+    &__title{
+        color: #4C4F56;
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 1;
+        text-align: left;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+
+        &::before{
+            content: '';
+            display: block;
+            width: 14.5px;
+            height: 14.5px;
+            background: url('../../../assets/img/sber.svg') no-repeat center center/cover;
+            margin-right: 18px;
+        }
+
+        & p{
+            font-size: 18px;
+            font-weight: 600;
+            color: #4C4F56;
+
+            & span{
+                font-weight: 40;
+            }
+        }
+    } 
+
+    &__list{
+        margin-bottom: 30px;
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        background: #EFEFEF;
+        width: 330px;
+        padding: 26px 23px;
+        border-radius: 5px;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 70px;
+            height: 26px;
+            background: url('../../../assets/img/item.svg') no-repeat center center/cover;
+            margin-right: 20px;
+        }
+    }
+
+    &__text{
+        
+        font-size: 14px;
+        font-weight: 400;
+        color: #4C4F56;
+        & span{
+            font-weight: 800;
+        }
+        
+    }
+}

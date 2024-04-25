@@ -1,0 +1,63 @@
+.slider{
+    &__title{
+        font-size: 47px;
+        font-weight: 400;
+        margin-bottom: 41px;
+        text-align: center;
+        & span{
+            font-weight: 800;
+        }
+    }
+    &__block{
+        position: relative;
+        width: 525px;
+        height: 295px;
+    }
+    &__wrap{
+        padding: 30px 43px;
+    }
+    &__img{
+        position: absolute;
+        z-index: -1;
+    }
+    &__subtitle{
+        font-size: 27px;
+        color: #fff;
+        font-weight: 500;
+        max-width: 312px;
+        margin-bottom: 19px;
+    }
+    &__text{
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        max-width: 257px;
+        margin-bottom: 28px;
+    }
+    &__btn{
+        color: #000;
+        background: #fff;
+        padding: 14px 54px;
+    }
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+    content: 'ᐳ';
+    color: #828787;
+}
+
+.slick-prev:before {
+    content: 'ᐸ';
+    color: #828787;
+}
+
+.slick-dots li.slick-active button:before {
+    position: absolute;
+    top: 5px;
+    content: '-';
+    background-color: #F3AB3C;
+    display: block;
+    height: 6px;
+    opacity: .25;
+    border-radius: 4px;
+}
