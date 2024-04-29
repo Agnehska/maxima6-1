@@ -39,7 +39,7 @@ return (
             </div>
             {stages.map(stage => {
                 if (stage.status === isActive){
-                    return <IdealHomeBlock stage={stage} />
+                    return <IdealHomeBlock stage={stage} key={stage.id} />
                 }
             })}               
             <div className="ideal-home__dogovor">
