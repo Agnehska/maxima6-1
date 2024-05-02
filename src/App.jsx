@@ -9,6 +9,9 @@ import Gallery from './components/Gallery/Gallery';
 import Consultation from './components/Consultation/Consultation';
 import Catalog from './components/Catalog/Catalog';
 import Estimate from './components/Estimate/Estimate';
+import Review from './components/Review/Review';
+import Director from './components/Director/Director';
+import Questions from './components/Questions/Questions';
 import { Counter } from './components/Counter/Counter';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
       <Gallery />
       <Consultation />
       <Catalog />
+      <Review />
+      <Director />
+      <Questions />
       <Estimate />
     </div>
   );
