@@ -1,0 +1,55 @@
+.accordion {
+  width: 575px;
+  position: relative;
+
+  &__wrap{
+    position: absolute;
+  }
+
+  &__title{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    min-width: 540px;
+    background-color: #EFEFEF ;
+    padding: 15px 12px;
+    transition: all 0.35s ease;
+    
+    &_up{
+      color: #585B63;
+      
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 29px;
+        height: 29px;
+        background: url('../../../assets/img/arrow.svg');
+        margin-right: 41px;
+      }
+    }
+    
+    
+    &_down{
+      background-color: #78AF36;
+      color: #F5F6FA;
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 29px;
+        height: 29px;
+        background: url('../../../assets/img/arrow.svg');
+        transform: rotate(180deg);
+        margin-right: 41px;
+      }
+    }
+  }
+
+  &__content{
+    color: #565962;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 10px 30px 30px 80px;
+  }
+}
+
