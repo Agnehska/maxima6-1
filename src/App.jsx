@@ -12,10 +12,12 @@ import Estimate from './components/Estimate/Estimate';
 import Review from './components/Review/Review';
 import Director from './components/Director/Director';
 import Questions from './components/Questions/Questions';
+import { Counter } from './components/Counter/Counter';
 
 function App() {
   return (
     <div >
+      <Counter />
       <Intro />
       <Promise />
       <Popular />
