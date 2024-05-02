@@ -1,4 +1,4 @@
-import { makeList } from "./util";
+import { makeList } from "./util.js";
 
 const newList = makeList(1, 100);
 
