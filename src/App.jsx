@@ -9,10 +9,12 @@ import Gallery from './components/Gallery/Gallery';
 import Consultation from './components/Consultation/Consultation';
 import Catalog from './components/Catalog/Catalog';
 import Estimate from './components/Estimate/Estimate';
+import { Counter } from './components/Counter/Counter';
 
 function App() {
   return (
     <div >
+      <Counter />
       <Intro />
       <Promise />
       <Popular />
