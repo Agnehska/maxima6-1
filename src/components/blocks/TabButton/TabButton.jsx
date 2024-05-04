@@ -5,7 +5,8 @@ export default function TabButton({class_btn, isActive, setStatus, elem, changeH
     // console.log(isActive);
   return (
     <button className={isActive ? class_btn + ' active' : class_btn}
-        onClick={() => {setStatus(elem.status); changeHouses(elem.status)}}>
+        onClick={() => {setStatus(elem.status); 
+        changeHouses(elem.status)}}>
             {children}
     </button>
   )
