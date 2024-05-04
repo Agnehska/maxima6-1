@@ -11,23 +11,26 @@ let number = Math.floor(Math.random() * 100);
 let answer = 102;
 let tries = 6;
 
-while (answer !== number && tries != 0){
-    answer = +prompt('Угадай число');
-    if (Math.abs(number - answer) === 0){
-        break;
-    }
-    if (Math.abs(number - answer) <= 5){
-        alert('Горячо!')
-    } else if (Math.abs(number - answer) <= 10){
-        alert('Тепло!')
-    } else {
-        alert('Холодно!')
-    }
-    tries--
+while (answer !== number && tries !== 0) {
+  answer = +prompt("Угадай число");
+
+  if (Math.abs(number - answer) === 0) {
+    break;
+  }
+
+  if (Math.abs(number - answer) <= 5) {
+    alert("Горячо!");
+  } else if (Math.abs(number - answer) <= 10) {
+    alert("Тепло!");
+  } else {
+    alert("Холодно!");
+  }
+
+  tries--;
 }
 
-if (tries === 0){
-    alert('Вы проиграли')
+if (tries === 0) {
+  alert("Вы проиграли");
 } else {
-    alert('Вы выиграли')
+  alert("Вы выиграли");
 }

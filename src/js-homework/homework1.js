@@ -9,6 +9,5 @@ console.log(triangleSquare(30, 50));
 // task 3
 let max = 67,
   min = 12;
-n = Math.floor(Math.random() * (max - min) + min);
+let n = Math.floor(Math.random() * (max - min) + min);
 console.log(n);
-
