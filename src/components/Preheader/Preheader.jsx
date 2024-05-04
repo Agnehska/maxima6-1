@@ -12,7 +12,7 @@ export default function Preheader() {
         <div className="preheader__wrap">
           <Logo />
           <Rating />
-          <Calc />
+          <Calc text={'Прислать проект на расчет'} status={true}/>
           <Socials />
         </div>
       </div>
