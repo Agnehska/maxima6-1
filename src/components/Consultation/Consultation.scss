@@ -1,0 +1,117 @@
+.consultation{
+  padding: 70px 0;
+
+  &__wrap{
+    position: relative;
+    background: url('../../assets/img/bg_consultation.jpg') no-repeat center center/cover;
+    padding: 60px;
+    border-radius: 85px 0;
+
+    &::before{
+      position: absolute;
+      top: -170px;
+      left: -170px;
+      z-index: -1;
+      content: '';
+      display: block;
+      width: 416px;
+      height: 347px;
+      background: url('../../assets/img/tree1.png');
+    }
+  }
+
+  &__title{
+    color: #2D2D2F;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 496px;
+    margin-bottom: 25px;
+    
+    & span{
+      font-weight: 700;
+    }
+  }
+
+  &__text{
+    color: #4C4F56;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 441px;
+    margin-bottom: 15px;
+  }
+
+  &__block{
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__info{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 145px;
+    margin-right: 47px;
+
+    & span{
+      font-weight: 700;
+    }
+
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 35px;
+      height: 15px;
+      background: url('../../assets/img/sber.svg') no-repeat center center/cover;
+      margin-right: 13px;
+    }
+  }
+
+  &__form{
+    display: flex;
+  }
+
+  &__elem{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label{
+    color: #413E3F;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 6px;
+  }
+
+  &__input{
+    color: #413E3F;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #EFEFEF;
+    border: none;
+    width: 223px;
+    font-size: 17px !important;
+    font-weight: 300;
+    padding: 13px 20px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+  }
+
+  &__btn{
+    text-transform: none;
+    margin-bottom: 9px;
+  }
+
+  &__politics{
+    color: #413E3F;
+    font-size: 9px;
+
+    &-text{
+      font-weight: 400;
+    }
+
+    &-link{
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}

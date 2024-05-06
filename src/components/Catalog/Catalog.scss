@@ -1,0 +1,33 @@
+.catalog{
+  padding: 100px 0;
+
+  &__wrap{
+    padding-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block{
+    position: relative;
+  }
+
+  &__img{
+    position: absolute;
+    left: 60px;
+    top: 130px;
+    background: url('../../assets/img/catalog.png') no-repeat 100% 100%/cover;
+    display: block;
+    width: 930px;
+    height: 630px;
+  }
+
+  &__title{
+    font-size: 47px;
+    font-weight: 400;
+    max-width: 430px;
+    & span{
+      font-weight: 700;
+    }
+  }
+
+}

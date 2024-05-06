@@ -1,0 +1,23 @@
+.footer{
+  padding: 34px 0;
+  background-color: #373739;
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__rights{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__politics{
+    color: #E5B53E;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+  }
+}
