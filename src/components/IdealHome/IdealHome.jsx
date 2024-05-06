@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../redux/slices/counterSlice';
 import { setStageForStore } from '../../redux/slices/stageSlice';
 
+
 const stages = [
     { id: 1, status: 'stage1', title: 'Этап 1' },
     { id: 2, status: 'stage2', title: 'Этап 2' },
@@ -27,6 +28,7 @@ export default function IdealHome() {
         setIsActive(stage);
         dispatch(increment());
         dispatch(setStageForStore(stage));
+        // dispatch(setStatusForFilter(stage))
     }
 
 

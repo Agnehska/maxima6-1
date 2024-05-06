@@ -12,6 +12,8 @@ import Estimate from './components/Estimate/Estimate';
 import Review from './components/Review/Review';
 import Director from './components/Director/Director';
 import Questions from './components/Questions/Questions';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 import { Counter } from './components/Counter/Counter';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
       <Director />
       <Questions />
       <Estimate />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
