@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Review.scss';
 import Slider from 'react-slick';
 import NextArrow from '../Slider/Arrows/NextArrow/NextArrow';
 import PrevArrow from '../Slider/Arrows/PrevArrow/PrevArrow';
 import ReviewBlock from './ReviewBlock/ReviewBlock';
-
-
-const reviewsInfo = [
-  {id:0, 
-    name: 'Дарья Достоевская1', 
-    date: '23 декабря 2022', 
-    text: 'Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым...'},
-  {id:1, 
-    name: 'Евгений Маяковский1', 
-    date: '23 декабря 2022', 
-    text: 'Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым...'},
-  {id:2, 
-    name: 'Дарья Достоевская2', 
-    date: '23 декабря 2022', 
-    text: 'Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым...'},
-  {id:3, 
-    name: 'Евгений Маяковский2', 
-    date: '23 декабря 2022', 
-    text: 'Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым...'},
-]
+import ReviewModal from './ReviewModal/ReviewModal';
 
 const Review = () => {
+  const [reviewsInfo, setReviewsInfo] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+
+  function handlerShowModal(){
+    setShowModal(true);
+  }
+
+  async function getReviews(){
+    const response = await fetch('http://localhost:5000/comments');
+    const reviews = await response.json();
+    setReviewsInfo(reviews);
+  }
+
+  useEffect(() => {
+    getReviews()
+  }, [])
+
   const settings = {
     dots: true,
     infinite: true,
@@ -39,15 +37,17 @@ const Review = () => {
     <section className="review">
       <div className="container">
         <h2 className="review__title"><span>Более 200 отзывов</span> от наших клиентов</h2>
+        <button className="review__btn" onClick={handlerShowModal}> Add </button>
         <Slider {...settings}> 
           {reviewsInfo.map(review => {
             return (
-              <ReviewBlock key={review.id} review={review}/>
+              <ReviewBlock key={review.id} review={review} getReviews={getReviews} />
             )
           })}
           
         </Slider>
       </div>
+      <ReviewModal getReviews={getReviews} showModal={showModal} setShowModal={setShowModal} />
     </section>
   );
 }
