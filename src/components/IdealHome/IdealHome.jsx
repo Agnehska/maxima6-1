@@ -5,9 +5,7 @@ import house from '../../assets/img/roof_icon.svg'
 import TabButton from '../blocks/TabButton/TabButton';
 import IdealHomeBlock from './IdealHomeBlock/IdealHomeBlock';
 import { useDispatch, useSelector } from 'react-redux';
-import { increment } from '../../redux/slices/counterSlice';
-import { setStageForStore } from '../../redux/slices/stageSlice';
-
+import { increment, setStageForStore } from '../../classic-redux/actionsCreator';
 
 const stages = [
     { id: 1, status: 'stage1', title: 'Этап 1' },
