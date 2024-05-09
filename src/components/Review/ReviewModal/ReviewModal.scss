@@ -1,0 +1,54 @@
+.modal{
+  // display: none;
+  position: absolute;
+  display: block;
+  left: calc(50% - 300px);
+  top:25%;
+  z-index: 99;
+  background-color: rgb(40, 9, 9);
+  padding: 50px;
+  border-radius: 4px;
+
+  &__close{
+    position: relative;
+    text-align: right;
+    top: -25px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input{
+    padding: 5px 5px;
+    border-radius: 4px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  &__textarea{
+    padding: 5px 5px;
+    border-radius: 4px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  &__btn{
+    padding: 5px 5px;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    background-color: #F3B43F;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+  }
+}
+
+.hide{
+  display: none;
+}
