@@ -16,12 +16,15 @@ import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 import { Counter } from './components/Counter/Counter';
 import { TestComments } from './components/TestComments/TestComments';
+import { Users } from './components/Users/Users';
 
 function App() {
   return (
     <div >
       <Counter />
       <TestComments />
+      <Users />
+
       <Intro />
       <Promise />
       <Popular />
