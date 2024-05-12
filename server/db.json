@@ -66,21 +66,27 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "Mike",
-      "email": "mike@mail.com",
-      "type": "admin"
-    },
-    {
       "id": "2",
       "name": "John",
       "email": "john2@mail.com",
-      "type": "user"
+      "type": "user",
+      "phone": "+7 927 000 00 00",
+      "login": "Jonni"
     },
     {
       "id": "3",
-      "name": "Vasya",
+      "name": "Vasilii",
       "email": "vasya@mail.com",
+      "type": "user",
+      "phone": "+7 965 000 00 00",
+      "login": "Vasya"
+    },
+    {
+      "id": "a0c0eb32",
+      "name": "user2",
+      "email": "user",
+      "phone": "user",
+      "login": "user",
       "type": "user"
     }
   ]
