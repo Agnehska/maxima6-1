@@ -1,0 +1,27 @@
+.users{
+  padding: 50px 0;
+
+  &__title{
+    color: #4C4F56;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__table-name{
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  &-create__btn{
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+}
+

@@ -66,22 +66,53 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "Mike",
-      "email": "mike@mail.com",
-      "type": "admin"
-    },
-    {
       "id": "2",
       "name": "John",
       "email": "john2@mail.com",
-      "type": "user"
+      "type": "user",
+      "phone": "+7 927 000 00 00",
+      "login": "Jonni"
     },
     {
       "id": "3",
-      "name": "Vasya",
+      "name": "Vasilii",
       "email": "vasya@mail.com",
+      "type": "user",
+      "phone": "+7 965 000 00 00",
+      "login": "Vasya"
+    },
+    {
+      "id": "a0c0eb32",
+      "name": "user2",
+      "email": "user",
+      "phone": "user",
+      "login": "user",
       "type": "user"
+    },
+    {
+      "id": "3ea98ed4",
+      "name": "Vasya",
+      "email": "vasya@mail.ruuuuu",
+      "phone": "+7-917-215-19-68",
+      "login": "vasya-login",
+      "type": "admin Big boss"
+    },
+    {
+      "id": "d574c702",
+      "name": "Vasya",
+      "email": "vasya@mail.ru",
+      "phone": "3534345345",
+      "login": "vasya",
+      "type": "big boss"
+    },
+    {
+      "id": "80b4dae3",
+      "name": "Petya5656",
+      "email": "petya@mail.ru",
+      "phone": "3453452355556",
+      "login": "wqeqrqwe`",
+      "type": "erqer",
+      "": "345345236"
     }
   ]
 }

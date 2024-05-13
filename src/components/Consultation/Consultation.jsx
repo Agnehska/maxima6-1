@@ -38,7 +38,7 @@ const Consultation = () => {
             </div>
           </div>
           <Button class_btn={'consultation__btn'} functionBtn={makeOrder}>Записаться на экскурсию</Button>
-          {console.log(consultationsData)}
+          {/* {console.log(consultationsData)} */}
           <div className="consultation__politics">
             <p className="consultation__politics-text">Нажимая на кнопку, вы соглашаетесь с условиями</p>
             <a href="/" className="consultation__politics-link">Политики конфиденциальности</a>
