@@ -1,0 +1,78 @@
+.ideal-home {
+  padding: 137px 0 60px 0;
+}
+.ideal-home__title {
+  font-size: 47px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.ideal-home__title span {
+  font-weight: 400;
+}
+.ideal-home__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.ideal-home__check {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 53px;
+  border-radius: 7px;
+}
+.ideal-home__wrap {
+  position: relative;
+}
+.ideal-home__dogovor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #FEFEF8;
+  padding: 16px 30px 20px 30px;
+  width: 151px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px 0 0 0;
+  box-shadow: -9px -2px 18px -5px rgba(0, 0, 0, 0.64);
+}
+.ideal-home__house {
+  margin-bottom: 15px;
+}
+.ideal-home__line {
+  position: relative;
+  height: 1px;
+  width: 90px;
+  background-color: #EFAD3D;
+  margin: 24px 0;
+}
+.ideal-home__line::after {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1px;
+  margin-bottom: 10px;
+  background-color: #EFAD3D;
+}
+.ideal-home__line::before {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1px;
+  margin-bottom: 10px;
+  background-color: #EFAD3D;
+}
+.ideal-home__information {
+  font-size: 15px;
+  font-weight: 400;
+  color: #505457;
+  margin-bottom: 15px;
+  text-align: center;
+}

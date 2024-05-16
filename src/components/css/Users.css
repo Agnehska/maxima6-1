@@ -1,0 +1,22 @@
+.users {
+  padding: 50px 0;
+}
+.users__title {
+  color: #4C4F56;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.users__row {
+  display: flex;
+  flex-direction: column;
+}
+.users__table-name {
+  font-size: 18px;
+  font-weight: 900;
+}
+.users-create__btn {
+  margin-bottom: 30px;
+  cursor: pointer;
+}

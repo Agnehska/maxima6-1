@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #F5F6FA;
+}
+
+.container {
+  width: 1105px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #2D2D2F;
+  font-size: 46px;
+  font-weight: 900;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.title span {
+  font-weight: 500;
+}

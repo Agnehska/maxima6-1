@@ -1,10 +1,10 @@
 import React, { useState, useEffect} from 'react';
 import './Users.scss';
 import UserCard from './UserCard/UserCard';
-import { fetchUsers } from '../../redux/slices/usersSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../blocks/Button/Button';
 import UserModal from './UserModal/UserModal';
+import { getUsers } from '../../redux/slices/usersSlice';
 
 
 const Users = () => {
@@ -15,7 +15,7 @@ const Users = () => {
   console.log(error);
 
   useEffect(() => {
-    dispatch(fetchUsers());
+    dispatch(getUsers())
   }, [dispatch])
 
   const printUsers = users?.map(user => {

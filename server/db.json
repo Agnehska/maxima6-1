@@ -71,7 +71,7 @@
       "email": "john2@mail.com",
       "type": "user",
       "phone": "+7 927 000 00 00",
-      "login": "Jonni"
+      "login": "Jonny"
     },
     {
       "id": "3",
@@ -83,10 +83,10 @@
     },
     {
       "id": "a0c0eb32",
-      "name": "user2",
-      "email": "user",
-      "phone": "user",
-      "login": "user",
+      "name": "user225",
+      "email": "user12",
+      "phone": "+7 925 254 23 56",
+      "login": "User",
       "type": "user"
     },
     {
@@ -106,13 +106,12 @@
       "type": "big boss"
     },
     {
-      "id": "80b4dae3",
-      "name": "Petya5656",
+      "id": "a0895b22",
+      "name": "Petr",
       "email": "petya@mail.ru",
-      "phone": "3453452355556",
-      "login": "wqeqrqwe`",
-      "type": "erqer",
-      "": "345345236"
+      "phone": "89274808413",
+      "login": "petya",
+      "type": "admin"
     }
   ]
 }

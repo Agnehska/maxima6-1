@@ -1,0 +1,20 @@
+.slider__title {
+  font-size: 47px;
+  font-weight: 400;
+  margin-bottom: 41px;
+  text-align: center;
+}
+.slider__title span {
+  font-weight: 800;
+}
+
+.slick-dots li.slick-active button:before {
+  position: absolute;
+  top: 5px;
+  content: "-";
+  background-color: #F3AB3C;
+  display: block;
+  height: 6px;
+  opacity: 0.25;
+  border-radius: 4px;
+}

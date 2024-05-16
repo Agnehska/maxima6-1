@@ -1,0 +1,119 @@
+.popular {
+  padding-top: 120px;
+}
+.popular__title {
+  font-size: 47px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 49px;
+}
+.popular__choice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.popular__all {
+  justify-self: flex-end;
+  color: #F7D047;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px dashed;
+}
+.popular__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+.popular__pic {
+  width: 100%;
+}
+.popular__info {
+  padding: 28px;
+}
+.popular__name {
+  font-size: 29px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.popular__card {
+  max-width: 350px;
+  background-color: #fff;
+}
+.popular__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.popular__block_2 {
+  margin-bottom: 7px;
+}
+.popular__block_2:last-child {
+  margin-bottom: 25px;
+}
+.popular__dim {
+  font-size: 13px;
+  font-weight: 400;
+}
+.popular__dim span {
+  font-weight: 800;
+}
+.popular__type {
+  display: flex;
+  align-items: center;
+}
+.popular__type_right {
+  font-weight: 700;
+  padding-bottom: 10px;
+  line-height: 0.6;
+}
+.popular__type_right span {
+  color: #73B918;
+  font-size: 31px;
+  font-weight: 800;
+}
+.popular__type::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #85B440;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.popular__btn {
+  padding: 23px 16px;
+  width: 261px;
+  margin-right: 15px;
+}
+.popular__btn p {
+  display: flex;
+  font-size: 10px;
+  font-weight: 800;
+}
+.popular__btn p::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 16px;
+  margin-left: 9px;
+  background: url("../../assets/img/arrow_right.svg") no-repeat center center/cover;
+}
+.popular__bottom {
+  display: flex;
+  align-items: center;
+}
+.popular__plan {
+  display: flex;
+  align-items: center;
+  color: #B8B8BA;
+  font-size: 9px;
+  font-weight: 400;
+}
+.popular__plan::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background: url("../../assets/img/sber.svg") no-repeat center center/cover;
+  margin-right: 9px;
+}
