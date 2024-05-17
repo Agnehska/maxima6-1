@@ -18,10 +18,12 @@ import Footer from './components/Footer/Footer';
 // import {TestComments} from './components/TestComments/TestComments';
 import Users from './components/Users/Users';
 import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path='/' element={<Intro />} />
         <Route path='/users' element={<Users />} />
@@ -31,11 +33,7 @@ function App() {
         <Route path='/multiple-items' element={<MultipleItems />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/review' element={<Review />} />
-        <Route path='/consultation' element={<Consultation />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/director' element={<Director />} />
         <Route path='/questions' element={<Questions />} />
-        <Route path='/estimate' element={<Estimate />} />
         <Route path='/contacts' element={<Contacts />} />
       </Routes>
       <Footer />

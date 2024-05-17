@@ -7,6 +7,7 @@ import IdealHomeBlock from './IdealHomeBlock/IdealHomeBlock';
 import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../redux/slices/counterSlice';
 import { setStageForStore } from '../../redux/slices/stageSlice';
+import Questions from '../Questions/Questions';
 
 
 const stages = [
@@ -24,7 +25,6 @@ export default function IdealHome() {
   const dispatch = useDispatch();
 
   function changeHouses(stage) {
-    console.log(stage);
     setIsActive(stage);
     dispatch(increment());
     dispatch(setStageForStore(stage));
@@ -32,36 +32,39 @@ export default function IdealHome() {
 
 
   return (
-    <div className="ideal-home">
-      <div className="container">
-        <h2 className="ideal-home__title"><span>Ваш</span> идеальный дом <span>всего за 6 этапов</span></h2>
-        <div className="ideal-home__wrap">
-          <div className="ideal-home__buttons">
-              {stages.map(stage => {
-                  return (
-                      <TabButton key={stage.id}
-                          class_btn={'tab__check ideal-home__check'}
-                          isActive={isActive === stage.status}
-                          setStatus={setIsActive}
-                          elem={stage}
-                          changeHouses={changeHouses}
-                      >{stage.title}</TabButton>
-                  )
-              })}
-          </div>
-          {stages.map(stage => {
-            if (stage.status === isActive) {
-              return <IdealHomeBlock stage={stage} key={stage.id} />
-            }
-          })}
-          <div className="ideal-home__dogovor">
-            <img src={house} alt="house" className='ideal-home__house' />
-            <span className="ideal-home__line"></span>
-            <p className="ideal-home__information">Пример договора - Этап №{stageFromStore}</p>
-            <img src={dogovor} alt="house" className='ideal-home__house' />
+    <>
+      <div className="ideal-home">
+        <div className="container">
+          <h2 className="ideal-home__title"><span>Ваш</span> идеальный дом <span>всего за 6 этапов</span></h2>
+          <div className="ideal-home__wrap">
+            <div className="ideal-home__buttons">
+                {stages.map(stage => {
+                    return (
+                        <TabButton key={stage.id}
+                            class_btn={'tab__check ideal-home__check'}
+                            isActive={isActive === stage.status}
+                            setStatus={setIsActive}
+                            elem={stage}
+                            changeHouses={changeHouses}
+                        >{stage.title}</TabButton>
+                    )
+                })}
+            </div>
+            {stages.map(stage => {
+              if (stage.status === isActive) {
+                return <IdealHomeBlock stage={stage} key={stage.id} />
+              }
+            })}
+            <div className="ideal-home__dogovor">
+              <img src={house} alt="house" className='ideal-home__house' />
+              <span className="ideal-home__line"></span>
+              <p className="ideal-home__information">Пример договора - Этап №{stageFromStore}</p>
+              <img src={dogovor} alt="house" className='ideal-home__house' />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <Questions />
+    </>
   )
 }
