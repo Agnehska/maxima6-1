@@ -38,7 +38,7 @@ export default function Popular() {
 return (
 <div className='popular'>
     <div className="container">
-        <h2 className="popular__title">Посмотрите популярные проекты домов {statusFilterStore}</h2>
+        <h2 className="popular__title">Посмотрите популярные проекты домов</h2>
         <div className="popular__wrap">
             <div className="popular__choice">
                 <div className="popular__buttons">

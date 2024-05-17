@@ -17,28 +17,29 @@ import Footer from './components/Footer/Footer';
 // import { Counter } from './components/Counter/Counter';
 // import {TestComments} from './components/TestComments/TestComments';
 import Users from './components/Users/Users';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div >
-      {/* <Counter /> */}
-      {/* <TestComments /> */}
-      <Users />
-      <Intro />
-      {/* <Promise />
-      <Popular />
-      <IdealHome />
-      <MultipleItems />
-      <Gallery />
-      <Consultation />
-      <Catalog />
-      <Review />
-      <Director />
-      <Questions />
-      <Estimate />
-      <Contacts />
-      <Footer /> */}
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Intro />} />
+        <Route path='/users' element={<Users />} />
+        <Route path='/promise' element={<Promise />} />
+        <Route path='/popular' element={<Popular />} />
+        <Route path='/ideal-home' element={<IdealHome />} />
+        <Route path='/multiple-items' element={<MultipleItems />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/review' element={<Review />} />
+        <Route path='/consultation' element={<Consultation />} />
+        <Route path='/catalog' element={<Catalog />} />
+        <Route path='/director' element={<Director />} />
+        <Route path='/questions' element={<Questions />} />
+        <Route path='/estimate' element={<Estimate />} />
+        <Route path='/contacts' element={<Contacts />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

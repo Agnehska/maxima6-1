@@ -9,14 +9,15 @@ import 'lightgallery/css/lg-thumbnail.css';
 import img from '../../assets/img/home.png';
 import img1 from '../../assets/img/img1.png'
 import Button from '../blocks/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
   const [galleryContainer, setGalleryContainer] = useState(null);
 
   const onInit = useCallback((detail) => {
     if (detail) {
-      // lightGalleryRef.current = detail.instance;
       detail.instance.openGallery();
     }
   }, []);
@@ -42,16 +43,16 @@ const Gallery = () => {
               elementClassNames={'gallery__container'}
             >
               <a href={img} className='gallery__link' onClick={event => event.preventDefault()}>
-                      <img alt="img1" src={img} />
+                <img alt="img1" src={img} />
               </a>
               <a href={img1} className='gallery__link' onClick={event => event.preventDefault()}>
-                      <img alt="img1" src={img1} />
+                <img alt="img1" src={img1} />
               </a>
               <a href={img} className='gallery__link' onClick={event => event.preventDefault()}>
-                      <img alt="img1" src={img} />
+                <img alt="img1" src={img} />
               </a>
               <a href={img1} className='gallery__link' onClick={event => event.preventDefault()}>
-                      <img alt="img1" src={img1} />
+                <img alt="img1" src={img1} />
               </a>
             </LightGallery>
           </div>
@@ -86,15 +87,12 @@ const Gallery = () => {
             </div>
             <div className="gallery__btns">
               <p className="gallery__question"><span>Понравился дом?</span> Рассчитайте стоимость в калькуляторе</p>
-              <Button class_btn={'gallery__btn'}>Рассчитать стоимость</Button>
+              <Button class_btn={'gallery__btn'} functionBtn={() => navigate('/ideal-home')}>Рассчитать стоимость</Button>
             </div>
           </div>
         </div>
-        
-      
       </div>
     </div>
-        
   );
 }
 
