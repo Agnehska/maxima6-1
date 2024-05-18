@@ -33,7 +33,7 @@ const Users = () => {
   return (
     <section className="users">
       {showModal && <UserModal showModal={showModal} setShowModal={setShowModal} />}
-      <div className="container">
+      <div className="users__container">
         <h2 className="users__title">Таблица пользователей</h2>
         { error ? 
           <p>{error}</p>:

@@ -28,7 +28,7 @@ const ReviewModal = ({getReviews, showModal, setShowModal}) => {
       <form className="modal__form">
           <input type="text" className="modal__input" placeholder='Name'  value={name} onChange={event => setName(event.target.value)}/>
           <input type="date" className="modal__input" required pattern="\d{4}-\d{2}-\d{2}" value={date} onChange={event => setDate(event.target.value)}/>
-          <textarea className="modal__textarea" placeholder='Your review' onChange={event => setBody(event.target.value)}>{body}</textarea>
+          <textarea className="modal__textarea" placeholder='Your review' onChange={event => setBody(event.target.value)} defaultValue={body}/>
             <button className="modal__btn" onClick={handlerSaveReview}>Save</button>
       </form>
     </div>

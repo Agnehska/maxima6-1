@@ -3,12 +3,13 @@ import './UserCard.scss';
 import { useDispatch } from 'react-redux';
 import { changeUsers, removeUsers } from '../../../redux/slices/usersSlice';
 import UserIsChange from './UserIsChange/UserIsChange';
+import { Link } from 'react-router-dom';
 
 const UserCard = ({ status, id, name, email, phone, login, type }) => {
   const [isChanging, setIsChanging] = useState(false);
   const [userData, setUserData] = useState({ id, name, email, phone, login, type })
   const dispatch = useDispatch();
-  console.log(userData.id)
+
   function changeItem() {
     dispatch(changeUsers(userData))
     setIsChanging(false)
@@ -32,6 +33,7 @@ const UserCard = ({ status, id, name, email, phone, login, type }) => {
         <>
           <p className="users__table-name card__elem">You can</p>
           <p className="users__table-name card__elem">You can</p>
+          <p className="users__table-name card__elem">You can read</p>
         </> :
         <>
           <div className="users__block card__elem">
@@ -43,6 +45,9 @@ const UserCard = ({ status, id, name, email, phone, login, type }) => {
           </div>
           <div className="users__block card__elem">
             <button className="users__btn" onClick={() => dispatch(removeUsers(id))}>Delete</button>
+          </div>
+          <div className="users__block card__elem">
+            <Link to={`/users/${id}`} className="users__btn" >More</Link >
           </div>
         </>}
 
