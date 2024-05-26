@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  stage: "Stage1",
+  stage: 1,
+  price: 0
 };
 
 export const stageSlice = createSlice({
@@ -11,10 +12,16 @@ export const stageSlice = createSlice({
     setStageForStore: (state, action) => {
       state.stage = action.payload;
     },
+    addPrice: (stage, action) => {
+      stage.price += action.payload;
+    },
+    decPrice: (stage, action) => {
+      stage.price -= action.payload;
+    }
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setStageForStore } = stageSlice.actions;
+export const { setStageForStore, addPrice, decPrice } = stageSlice.actions;
 
 export default stageSlice.reducer;

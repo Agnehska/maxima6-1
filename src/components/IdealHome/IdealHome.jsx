@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import './IdealHome.scss';
-import dogovor from '../../assets/img/dogovor.svg';
-import house from '../../assets/img/roof_icon.svg'
+// import dogovor from '../../assets/img/dogovor.svg';
+// import house from '../../assets/img/roof_icon.svg'
 import TabButton from '../blocks/TabButton/TabButton';
 import IdealHomeBlock from './IdealHomeBlock/IdealHomeBlock';
 import { useDispatch, useSelector } from 'react-redux';
-import { increment } from '../../redux/slices/counterSlice';
-import { setStageForStore } from '../../redux/slices/stageSlice';
+// import { increment } from '../../redux/slices/counterSlice';
+import { setStageForStore, addPrice, decPrice } from '../../redux/slices/stageSlice';
 import Questions from '../Questions/Questions';
 
 
 const stages = [
-  { id: 1, status: 'stage1', title: 'Этап 1' },
-  { id: 2, status: 'stage2', title: 'Этап 2' },
-  { id: 3, status: 'stage3', title: 'Этап 3' },
-  { id: 4, status: 'stage4', title: 'Этап 4' },
-  { id: 5, status: 'stage5', title: 'Этап 5' },
-  { id: 6, status: 'stage6', title: 'Этап 6' },
+  { id: 1, status: 'stage1', title: 'Этап 1', price: 100 },
+  { id: 2, status: 'stage2', title: 'Этап 2', price: 200 },
+  { id: 3, status: 'stage3', title: 'Этап 3', price: 100 },
+  { id: 4, status: 'stage4', title: 'Этап 4', price: 400 },
+  { id: 5, status: 'stage5', title: 'Этап 5', price: 500 },
+  { id: 6, status: 'stage6', title: 'Этап 6', price: 1200 },
 ]
 
 export default function IdealHome() {
@@ -24,10 +24,14 @@ export default function IdealHome() {
   const stageFromStore = useSelector((state) => state.stage.stage);
   const dispatch = useDispatch();
 
-  function changeHouses(stage) {
-    setIsActive(stage);
-    dispatch(increment());
-    dispatch(setStageForStore(stage));
+  function changeHouses(id, stage, price) {
+    dispatch(setStageForStore(id));
+    if (stageFromStore < id){
+      dispatch(addPrice(price))
+    } else {
+      dispatch(decPrice(stages[id].price))
+      console.log(stages[id].price)
+    }
   }
 
 
@@ -55,12 +59,12 @@ export default function IdealHome() {
                 return <IdealHomeBlock stage={stage} key={stage.id} />
               }
             })}
-            <div className="ideal-home__dogovor">
+            {/* <div className="ideal-home__dogovor">
               <img src={house} alt="house" className='ideal-home__house' />
               <span className="ideal-home__line"></span>
               <p className="ideal-home__information">Пример договора - Этап №{stageFromStore}</p>
               <img src={dogovor} alt="house" className='ideal-home__house' />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

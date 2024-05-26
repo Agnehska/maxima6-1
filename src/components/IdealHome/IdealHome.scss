@@ -4,7 +4,7 @@
         font-size: 47px;
         font-weight: 900;
         text-align: center;
-        margin-bottom: 48px;
+        margin-bottom: 10px;
         & span{
             font-weight: 400;
         }
@@ -17,9 +17,9 @@
     }
     
     &__check{
-        font-size: 18px;
-        font-weight: 700;
-        padding: 14px 53px;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        padding: 14px 53px !important;
         border-radius: 7px;
     }
 
