@@ -5,6 +5,7 @@ import NextArrow from './Arrows/NextArrow/NextArrow'
 import PrevArrow from "./Arrows/PrevArrow/PrevArrow";
 import SliderBlock from "./SliderBlock/SliderBlock";
 import { useSelector } from "react-redux";
+import Catalog from "../Catalog/Catalog";
 
 
 const slidersInfo = [
@@ -44,21 +45,23 @@ function MultipleItems() {
   };
 
   return (
-    <div className="slider">
-      <div className="container">
-        <h2 className="slider__title"><span>{count} Акции и подарки</span> для каждой семьи</h2>
-        <div className="slider-container">
-          <Slider {...settings}>
-            {slidersInfo.map(info => {
-              return (
-                <SliderBlock info={info} key={info.id} />
-              )
-            })}
-          </Slider>
+    <>
+      <div className="slider">
+        <div className="container">
+          <h2 className="slider__title"><span>{count} Акции и подарки</span> для каждой семьи</h2>
+          <div className="slider-container">
+            <Slider {...settings}>
+              {slidersInfo.map(info => {
+                return (
+                  <SliderBlock info={info} key={info.id} />
+                )
+              })}
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
-
+      <Catalog />
+    </>
   );
 }
 

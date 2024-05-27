@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './UserModal.scss';
 import { uuid } from '../../../api/helpers';
 import { useDispatch } from 'react-redux';
-import { createUser } from '../../../redux/slices/usersSlice';
+import { addUsers } from '../../../redux/slices/usersSlice';
 
 const UserModal = ({ showModal, setShowModal}) => {
   const dispatch = useDispatch();
@@ -21,7 +21,8 @@ const UserModal = ({ showModal, setShowModal}) => {
     event.preventDefault();
 
     setShowModal(false);
-    dispatch(createUser(formInfo));
+
+    dispatch(addUsers(formInfo))
   }
 
   return (

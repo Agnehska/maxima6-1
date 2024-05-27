@@ -5,6 +5,7 @@ import NextArrow from '../Slider/Arrows/NextArrow/NextArrow';
 import PrevArrow from '../Slider/Arrows/PrevArrow/PrevArrow';
 import ReviewBlock from './ReviewBlock/ReviewBlock';
 import ReviewModal from './ReviewModal/ReviewModal';
+import Director from '../Director/Director';
 
 const Review = () => {
   const [reviewsInfo, setReviewsInfo] = useState([]);
@@ -34,21 +35,24 @@ const Review = () => {
     prevArrow: <PrevArrow />
   };
   return (
-    <section className="review">
-      <div className="container">
-        <h2 className="review__title"><span>Более 200 отзывов</span> от наших клиентов</h2>
-        <button className="review__btn" onClick={handlerShowModal}> Add </button>
-        <Slider {...settings}> 
-          {reviewsInfo.map(review => {
-            return (
-              <ReviewBlock key={review.id} review={review} getReviews={getReviews} />
-            )
-          })}
-          
-        </Slider>
-      </div>
-      <ReviewModal getReviews={getReviews} showModal={showModal} setShowModal={setShowModal} />
-    </section>
+    <>
+      <Director />
+      <section className="review">
+        <div className="container">
+          <h2 className="review__title"><span>Более 200 отзывов</span> от наших клиентов</h2>
+          <button className="review__btn" onClick={handlerShowModal}> Add </button>
+          <Slider {...settings}> 
+            {reviewsInfo.map(review => {
+              return (
+                <ReviewBlock key={review.id} review={review} getReviews={getReviews} />
+              )
+            })}
+            
+          </Slider>
+        </div>
+        <ReviewModal getReviews={getReviews} showModal={showModal} setShowModal={setShowModal} />
+      </section>
+    </>
   );
 }
 

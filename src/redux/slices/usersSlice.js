@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
-import { uuid } from "../../api/helpers";
+import { createSlice, createAction } from "@reduxjs/toolkit";
+import { put } from "redux-saga/effects";
 
 
 const initialState = {
@@ -7,105 +7,87 @@ const initialState = {
   status: null,
   error: null
 }
-export const fetchUsers = createAsyncThunk(
-  'users/fetchUsers',
-  async function(){
-    const response = await fetch('http://localhost:5000/users');
 
-    const data = await response.json();
+export function* getUsersSaga(){
+  const payload = yield fetch('http://localhost:5000/users').then(response => response.json());
 
-    return data;
-  }
-)
+  yield put(getUsersSuccess(payload))
+}
 
-export const deleteUsers = createAsyncThunk(
-  'users/deleteUsers',
-  async function(id, {dispatch}){
-    // const response = await fetch(`http://localhost:5000/users/${id}`,{
-    //   method: 'DELETE',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
-    // if (response.ok){
-      dispatch(removeUser({id}));
-    // }
-  }
-);
+export function* addUsersSaga(user){
+  const payload = yield fetch('http://localhost:5000/users',{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(user.payload)
+  }).then(response => response.json());
 
-export const changeUser = createAsyncThunk(
-  'users/changeUser',
-  async function(user, {dispatch}){
-    const response = await fetch(`http://localhost:5000/users/${user.id}`,{
+  yield put(addUser(payload))
+}
+
+export function* deleteUsersSaga(id){
+  
+  yield fetch(`http://localhost:5000/users/${id.payload}`,{
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  });
+
+  yield put(removeUser(id.payload))
+}
+
+export function* changeUserSaga(user){
+  const payload = yield fetch(`http://localhost:5000/users/${user.payload.id}`,{
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(user)
-    })
-    if (response.ok){
-      dispatch(newDataForUser({user}))
-    }
-  }
-)
+      body: JSON.stringify(user.payload)
+    }).then(response => response.json());
 
-export const createUser = createAsyncThunk(
-  'users/createUser',
-  async function(user, {dispatch}){
-    const response = await fetch(`http://localhost:5000/users`,{
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(user)
-    })
-    if (response.ok){
-      dispatch(addUser({user}))
-    }
-  }
-)
+  yield put(newDataForUser(payload))
+}
 
-const setError = (state, action) => {
-  state.status = 'rejected';
-  state.error = action.error.message;
-};
 
 const usersSlice = createSlice({
   name: 'users',
   initialState,
   reducers: {
+    getUsersSuccess(state, action){
+      state.users = action.payload;
+    },
     addUser(state,{payload}){
-      state.users.push(payload.user)
+      state.users.push(payload)
     },
     newDataForUser(state, {payload}){
+      console.log('wefwgef', payload)
       state.users = state.users.map(user => {
-        if (user.id === payload.user.id){
-          user = payload.user
+        if (user.id === payload.id){
+          user = payload
         } 
         return user
       })
     },
     removeUser(state, {payload}){
-      state.users = state.users.filter(user => user.id !== payload.id)
-      console.log(state.users)
+      state.users = state.users.filter(user => user.id !== payload)
     }
   },
-  extraReducers: (builder) => {
-    builder.addCase(fetchUsers.pending, (state) => {
-      state.status = 'loading';
-      state.error = null;
-    });
-    builder.addCase(fetchUsers.fulfilled, (state, action) => {
-      state.status = 'resolved';
-      state.users = action.payload;
-    });
-    builder.addCase(fetchUsers.rejected, setError);
-    builder.addCase(deleteUsers.rejected, setError);
-    builder.addCase(changeUser.rejected, setError);
-    builder.addCase(createUser.rejected, setError);
-  }
 })
 
-export const { removeUser, newDataForUser, addUser } = usersSlice.actions;
+export const GET_USERS = 'users/getUsers';
+export const getUsers = createAction(GET_USERS);
+
+export const ADD_USER = 'users/addUsers';
+export const addUsers = createAction(ADD_USER);
+
+export const REMOVE_USER = 'users/removeUsers';
+export const removeUsers = createAction(REMOVE_USER);
+
+export const CHANGE_USER = 'users/changeUsers';
+export const changeUsers = createAction(CHANGE_USER);
+
+export const { removeUser, newDataForUser, addUser, getUsersSuccess } = usersSlice.actions;
 
 export default usersSlice.reducer;

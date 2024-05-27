@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+}
+.socials__block {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.socials__block:not(:last-child) {
+  margin-right: 50px;
+}
+.socials__text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.socials__text::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #5fc576;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.socials__phone {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.socials__link {
+  color: #87bf3c;
+  font-size: 12px;
+  font-weight: 6000;
+  border-bottom: 1px dashed #87bf3c;
+}

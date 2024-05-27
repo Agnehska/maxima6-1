@@ -1,0 +1,58 @@
+.promise-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: black;
+  max-width: 355px;
+  justify-content: space-between;
+}
+.promise-card_big {
+  height: 400px;
+  background: url("../../../assets/img/bg_promise_big.png") no-repeat center center/cover;
+}
+.promise-card_small {
+  background: url("../../../assets/img/bg_promise_small1.png") no-repeat center center/cover;
+}
+.promise-card__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.promise-card__title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.promise-card__notice {
+  width: 95px;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 9px 7px 8px 6px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+}
+.promise-card__pay {
+  display: flex;
+}
+.promise-card__pay_order {
+  flex-direction: column-reverse;
+}
+.promise-card__btn {
+  width: 159px;
+  font-size: 10px;
+  padding: 10px 14px;
+  background-color: #73B918;
+  margin-right: 13px;
+}
+.promise-card__price {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.promise-card__price span {
+  font-size: 25px;
+  font-weight: 700;
+}

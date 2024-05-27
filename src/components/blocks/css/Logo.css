@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 90px;
+}
+.logo__block {
+  width: 127px;
+  margin-left: 10px;
+}
+.logo__info {
+  font-size: 9px;
+  font-weight: 400;
+  color: #909195;
+}

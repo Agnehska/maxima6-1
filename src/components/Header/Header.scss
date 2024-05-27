@@ -1,5 +1,6 @@
 .header {
-  margin-bottom: 85px;
+  padding: 30px 0;
+  background-color: #73B918;
 
   &__menu {
     display: flex;
@@ -8,13 +9,13 @@
 
   &__item {
     border: 1px solid transparent;
-    padding: 4px 11px 6px 11px;
+    padding:  6px 11px;
     border-radius: 15px;
   }
 
   &__item:hover {
     cursor: pointer;
-    border: 1px solid #e1a43b;
+    border: 1px solid #efd2a0;
   }
 
   &__link {

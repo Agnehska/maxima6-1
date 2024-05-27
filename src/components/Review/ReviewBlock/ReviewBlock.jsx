@@ -48,7 +48,7 @@ const ReviewBlock = ({review, getReviews}) => {
       </div>
           {isModified ? 
           <>
-            <textarea className='review__textarea' onChange={event => setBody(event.target.value)}>{body}</textarea>
+            <textarea className='review__textarea' defaultValue={{body}} onChange={event => setBody(event.target.value)}/>
             <button className="review__btn" onClick={() => handlerSaveReview(review.id)}>Save</button>
           </> : 
           <>
