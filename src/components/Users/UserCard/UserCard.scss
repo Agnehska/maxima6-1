@@ -1,0 +1,33 @@
+.users{
+  &__card{
+    display: flex;
+  }
+
+  &__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn{
+    padding: 10px 20px;
+    background-color: #84b73d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__input{
+    width: 120px;
+    color: #4C4F56;
+    border: 2px solid;
+    padding: 5px;
+  }
+}
+
+.card__elem{
+  color: #4C4F56;
+  border: 2px solid;
+  padding: 10px;
+  min-width: 155px;
+}

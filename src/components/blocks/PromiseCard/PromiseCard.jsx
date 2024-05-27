@@ -1,8 +1,8 @@
-import React from 'react'
-import './PromiseCard.scss'
+import React from 'react';
+import './PromiseCard.scss';
 
 
-export default function PromiseCard({size, text, text1, price}) {
+function PromiseCard({size, text, text1, price}) {
   return (
     <div className={`promise-card promise-card_${size}`}>
         <div className="promise-card__block">
@@ -25,3 +25,5 @@ export default function PromiseCard({size, text, text1, price}) {
     </div>
   )
 }
+
+export default PromiseCard;

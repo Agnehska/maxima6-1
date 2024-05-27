@@ -1,0 +1,31 @@
+.slider__block {
+  position: relative;
+  width: 525px;
+  height: 295px;
+}
+.slider__wrap {
+  padding: 30px 43px;
+}
+.slider__img {
+  position: absolute;
+  z-index: -1;
+}
+.slider__subtitle {
+  font-size: 27px;
+  color: #fff;
+  font-weight: 500;
+  max-width: 312px;
+  margin-bottom: 19px;
+}
+.slider__text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  max-width: 257px;
+  margin-bottom: 28px;
+}
+.slider__btn {
+  color: #000;
+  background: #fff;
+  padding: 14px 54px;
+}

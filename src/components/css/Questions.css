@@ -1,0 +1,28 @@
+.questions {
+  padding: 70px 0;
+}
+.questions__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.questions__block {
+  max-width: 428px;
+}
+.questions__title {
+  color: #2D2D2F;
+  font-size: 47px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.questions__title span {
+  font-weight: 700;
+}
+.questions__text {
+  color: #565962;
+  font-size: 11px;
+  font-weight: 300;
+  max-width: 207px;
+}
+.questions__text span {
+  font-weight: 700;
+}

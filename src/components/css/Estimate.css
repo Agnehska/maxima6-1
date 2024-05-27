@@ -1,0 +1,58 @@
+.estimate {
+  padding: 140px 0 70px 0;
+}
+.estimate__wrap {
+  position: relative;
+  display: flex;
+}
+.estimate__wrap::before {
+  position: absolute;
+  top: -90px;
+  left: -240px;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 450px;
+  height: 296px;
+  background: url("../../assets/img/tree1.png");
+  transform: rotate(-45deg);
+}
+.estimate__block {
+  padding: 55px 120px 100px 85px;
+  background: url("../../assets/img/bg_smeta.png") no-repeat center center/cover;
+  border-radius: 118px 0 0 0;
+}
+.estimate__title {
+  color: #2D2D2F;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 34px;
+}
+.estimate__title span {
+  font-weight: 700;
+}
+.estimate__subtitle {
+  color: #494B50;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 23px;
+}
+.estimate__text {
+  display: flex;
+  align-items: flex-start;
+  color: #494B50;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.estimate__text span {
+  font-weight: 700;
+}
+.estimate__text::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../../assets/img/sber.svg");
+  margin-right: 11px;
+}

@@ -1,0 +1,30 @@
+.main__wrap {
+  max-width: 460px;
+}
+.main__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.main__title span {
+  font-weight: 600;
+}
+.main__text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 42px;
+  max-width: 323px;
+}
+.main__text span {
+  font-weight: 600;
+}
+.main__btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 42px;
+  background: #feaa01;
+  text-transform: uppercase;
+}
