@@ -25,7 +25,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route 
-          index 
+          path='*' 
           element={
             <React.Suspense fallback={<Preloader />}>
               <Intro />

@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { increment } from '../../redux/slices/counterSlice';
 import { setStageForStore, addPrice, decPrice } from '../../redux/slices/stageSlice';
 import Questions from '../Questions/Questions';
+import Calculator from '../Calculator/Calculator';
 
 
 const stages = [
@@ -37,6 +38,7 @@ export default function IdealHome() {
 
   return (
     <>
+    <Calculator />
       <div className="ideal-home">
         <div className="container">
           <h2 className="ideal-home__title"><span>Ваш</span> идеальный дом <span>всего за 6 этапов</span></h2>

@@ -7,6 +7,7 @@ import usersSlice, { ADD_USER, GET_USERS, REMOVE_USER, CHANGE_USER,
    getUsersSaga, addUsersSaga, deleteUsersSaga, changeUserSaga } from "./slices/usersSlice";
 import createSagaMiddleware from 'redux-saga';
 import {takeEvery} from 'redux-saga/effects';
+import calculationSlice from "./slices/calculationSlice";
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -23,6 +24,7 @@ export const store = configureStore({
   reducer: {
     counter: counterReducer,
     stage: stageReducer,
+    calculator: calculationSlice,
     filter: filterReducer,
     consultations: consultationReducer,
     users: usersSlice,
